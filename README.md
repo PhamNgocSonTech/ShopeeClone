@@ -1,1 +1,1 @@
-# XXX-Project
+# Shopy Game

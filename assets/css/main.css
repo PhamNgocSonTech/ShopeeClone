@@ -16,7 +16,12 @@
 
 .header__navbar-item {
     margin: 0 8px;
-    /* min-height: 26px; */
+    position: relative;
+    min-height: 26px;
+}
+
+.header__navbar-item--has-qr:hover .header__qr {
+    display: block;
 }
 
 
@@ -67,4 +72,48 @@
 .header__navbar-item-title--no-pointer {
     cursor: text;
     color: var(--white-color);
+}
+
+/* HEADER QR CODE */
+.header__qr {
+    background-color: var(--white-color);
+    width: 186px;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__qr::before {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -16px;
+    content: "";
+    display: block;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__app-download-link:nth-child(1) {
+    margin-left: 11px;
+}
+.header__app-download-link:nth-child(2) {
+    margin-right: 11px;
+}
+
+.header__app-download {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__app-download-img {
+    height: 15px;
 }

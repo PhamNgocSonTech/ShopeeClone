@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0-web/css/all.min.css">
     <title>Shopy</title>
 </head>
 <body>
@@ -21,20 +22,44 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">Tải ứng dụng</li>
-                        <span class="header__navbar-item header__navbar-item--separator"></span>
-                        <li class="header__navbar-item">Kết nối</li>
+                        <li class="header__navbar-item header__navbar-item--has-qr">
+                            Tải ứng dụng
+                            
+                            <!-- HEADER QR CODE -->
+                            <div class="header__qr">
+                                <img src="./assets/imgs/qr-code/qr-code.png" alt="QR Code" class="header__qr-img">
+                                <div class="header__app-download">
+                                    <a href="" class="header__app-download-link"><img src="./assets/imgs/qr-code/app-store.png" alt="App Store" class="header__app-download-img"></a>
+                                    <a href="" class="header__app-download-link"><img src="./assets/imgs/qr-code/play-store.png" alt="Play Store" class="header__app-download-img"></a>
+                                    <!-- <a href="" class="header__app-download-link"><img src="./assets/imgs/qr-code/app-gallery.png" alt="App Gallery" class="header__app-download-img"></a> -->
+                                </div>
+                            </div>
+
+                        </li>
+                        <span class="header__navbar-item--separator"></span>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fa-brands fa-facebook"></i></a>
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fa-brands fa-instagram"></i></a>
+                            
+                        </li>
                     </ul>
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Thông báo</a>
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
                         </li>
                 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Hỗ trợ</a>
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Hỗ trợ
+                            </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--bold">Đăng kí</li>
-                        <span class="header__navbar-item header__navbar-item--separator"></span>
+                        <span class="header__navbar-item--separator"></span>
                         <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li>
                     </ul>
                 </nav>

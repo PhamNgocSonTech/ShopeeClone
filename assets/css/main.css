@@ -1,6 +1,6 @@
 /* HEADER CSS */
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #f5402d, #fe6232);
 }
 
@@ -12,7 +12,7 @@
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
-    margin-top: 4px;
+    margin-top: 4px 0 0 0;
 }
 
 .header__navbar-item {
@@ -250,6 +250,41 @@
     margin: auto;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+/* Header With Search Css */
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__logo-img {
+    width: 150px;
+    color: var(--white-color);
+}
+
+.header__search {
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.header__cart {
+    width: 150px;
+    text-align: center;
+    
+}
+
+.header__cart-icon {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    margin-top: 6px;
 }
 
 
